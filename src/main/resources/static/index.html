@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crud Spring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+  <h2 class="mt-5 mb-4">Seja Bem Vindo !</h2>
+
+  <form id="formRegisterUser">
+    <div class="mb-3">
+      <label for="id" class="form-label">Id:</label>
+      <input class="form-control" id="id" type="number" readonly>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Nome: </label>
+      <input type="text" class="form-control" id="name" required placeholder="Informe o Nome">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email: </label>
+      <input type="email" class="form-control" id="email" required placeholder="example@gmail.com">
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Idade:</label>
+      <input class="form-control" id="age" required type="number" placeholder="Informe a idade...">
+    </div>
+  </form>
+
+
+  <button type="button" class="btn btn-success" onclick="saveUser()">Salvar</button>
+  <button type="button" class="btn btn-warning" onclick="editUser()"> Editar </button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSearchUser">Pesquisar</button>
+  <button type="button" class="btn btn-danger" onclick="btnDeleteUser()">Delete</button>
+
+
+    <div class="modal fade" id="modalSearchUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pesquisar Usuário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="searchName" class="form-label">Informe o Nome:</label>
+                            <input type="text" class="form-control" id="searchName">
+                        </div>
+                        <button type="button" onclick="searchUser()" class="btn btn-success">Buscar</button>
+                    </form>
+
+                    <div style="height:250px;overflow:scroll;">
+                        <table id="tableResult" class="table mt-4">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody> </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+M5T0dGJj3g5zqkgm8zN5Zq5n4p"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
