@@ -5,7 +5,7 @@ This Spring Boot project demonstrates a CRUD (Create, Read, Update, Delete) appl
 
 The CRUD operations are performed on a data entity (e.g., Employee, Product, etc.). The application provides endpoints to handle these operations, enabling seamless interaction with the data from the front end .
 
-## Features
+## Features 
 - RESTful endpoints for CRUD operations.
 - Integration with AJAX requests for asynchronous communication with the front end.
 - Utilizes Spring Boot for easy setup and development.
