@@ -2,7 +2,7 @@
 
 ## Overview
 This Spring Boot project demonstrates a CRUD (Create, Read, Update, Delete) application with RESTful endpoints. The application integrates with AJAX (jQuery) requests for communication with the front end Bootstrap API. 
-
+ 
 The CRUD operations are performed on a data entity (e.g., Employee, Product, etc.). The application provides endpoints to handle these operations, enabling seamless interaction with the data from the front end .
 
 ## Features 
